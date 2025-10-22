@@ -109,10 +109,9 @@ h2 {
 
 h3 {
     /* justify-self: center; */
-    min-width: 82%;
+    width: max(82%, 45rem);
     height: 100%;
     margin: 0rem 16rem 4rem 0rem; 
-    
 }
 
 fieldset {
