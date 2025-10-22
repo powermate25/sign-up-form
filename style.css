@@ -20,11 +20,11 @@ body {
 }
 
 div {
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
 }
 
 .main-container {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,14 +34,16 @@ div {
     padding: 0;
 }
 .left-container {
-    border: 2px solid yellow;
+   /*  border: 2px solid yellow; */
     width: 36%;
     height: 100%;
-    /* background: url(./images/teemu-paananen-medium.jpg); */
+    background: url(./images/teemu-paananen-medium.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat; 
 }
 
 .right-container {
-    border: 2px solid red;
+    /* border: 5px solid red; */
     width: 64%;
     height: 100%;
     background-color: oklch(97% 0.5% 270);
@@ -49,14 +51,19 @@ div {
     margin: 0; 
 }
 section {
-    border: 5px solid rgb(0, 255, 81);
+   /* border: 5px solid rgb(0, 255, 81); */
     height: fit-content;
-    padding: 0;
-    margin: 0 3rem 0 3rem ;
+    padding: 0 0 0 3rem ;
+    margin: 0 0rem 0 0rem ;
+    
     
 }
 .section-1 {
     margin-top: 10rem;
+}
+
+.form-separator-2 {
+    margin: 0 0rem 0rem 4.5rem;
 }
 
 h2 {
@@ -66,18 +73,20 @@ h2 {
 h3 {
     /* border: 1px solid blue; */
     /* justify-self: center; */
-    width: 69%;
+    width: 80%;
     height: 100%;
     margin: 0rem 16rem 4rem 0rem;
     
 }
 
 fieldset {
+    /* border: 1px solid red; */
     display: flex;
     justify-content: start;
     align-items: center;
-    margin: 0;
+    margin: 0 0 1rem 0;
     padding: 0;
+    box-shadow: ;
 }
 
 .input-block {
@@ -92,4 +101,31 @@ fieldset {
 input {
     width: 16rem;
     height: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid #E5E7EB;
+    border-width: 0.1px;
+}
+.section-2 {
+    background-color: #ffffff;
+   
+}
+
+
+button {
+    padding: 0.5rem 3rem;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    background-color: green;
+    margin: 2rem 0 2rem  0;
+    font-family: inherit;
+}
+
+a, href{
+    color: green;
+    text-decoration: none;
+}
+
+.call-to-action {
+    background-color: oklch(97% 0.5% 270);
+    
 }
