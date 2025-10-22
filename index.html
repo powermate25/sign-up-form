@@ -25,18 +25,18 @@
 
                 <section class="section-2">
                     <h2>Let's do this!</h2>
-                    <form action="https//httpbin.org/post" method="post">
+                    <form id="sign-up-form" action="https//httpbin.org/post" method="post">
                         <fieldset class="form-input">
 
                         <div class="form-separator-1">
                         <p class="input-block">
                         <label for="firstname">FIRST NAME</label>
-                        <input type="text" id="firstname" name="user_firstname" required>
+                        <input type="text" id="firstname" name="user_firstname">
                         </p>
 
                         <p class="input-block">
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="user_email" required>
+                        <input type="email" id="email" name="user_email">
                         </p>
 
                         <p class="input-block">
@@ -48,28 +48,29 @@
                         <div class="form-separator-2">
                         <p class="input-block">
                         <label for="lastname">LAST NAME</label>
-                        <input type="text" id="lastname" name="user_lastname" required>
+                        <input type="text" id="lastname" name="user_lastname">
                         </p>
 
                         <p class="input-block">
                         <label for="phonenum">PHONE NUMBER</label>
-                        <input type="tel" id="phonenum" name="user_phonenum" required>
+                        <input type="tel" id="phonenum" name="user_phonenum">
                         </p>
 
                         <p class="input-block">
-                        <label for="password">CONFIRM PASSWORD</label>
-                        <input type="password" id="password" name="user_password" required>
+                        <label for="password_check">CONFIRM PASSWORD</label>
+                        <input type="password" id="password_check" name="user_password" minlength="8" required>
                         </p>
                         </div>
                     </fieldset>
-
-                    <div class="call-to-action">
-                        <button type="submit">Create Account</button>
-                        <h3>Already have an account? <a href="#">Login</a></h3>
-                     </div>
-
                     </form>
                 </section>
+
+                    <section class="cta-section">
+                        <button type="submit" form="sign-up-form">Create Account</button>
+                        <h3>Already have an account? <a href="#">Login</a></h3>
+                    </section>
+               
+                
 
             </div>
         </div>
