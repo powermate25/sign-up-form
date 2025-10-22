@@ -12,8 +12,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: /* url(./images/teemu-paananen-OOE4xAnBhKo-unsplash.jpg) */ ;
-    /* background-color: black; */
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -47,7 +45,6 @@ div {
 }
 
 .main-container {
-    /* border: 1px solid blue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +54,6 @@ div {
     padding: 0;
 }
 .left-container {
-   /*  border: 2px solid yellow; */
     width: 36%;
     height: 100%;
     background: url(./images/teemu-paananen-low.jpg);
@@ -67,7 +63,6 @@ div {
 }
 
 .right-container {
-    /* border: 5px solid red; */
     width: 64%;
     height: 100%;
     background-color: oklch(97% 0.5% 270);
@@ -75,7 +70,7 @@ div {
     margin: 0; 
 }
 section {
-   /* border: 5px solid rgb(0, 255, 81); */
+   /* border: 5px solid rgb(0, 255, 81); */ 
     height: fit-content;
     padding: 0 0 0 3rem ;
     margin: 0 0rem 0 0rem ;
@@ -95,7 +90,6 @@ h2 {
 }
 
 h3 {
-    /* border: 1px solid blue; */
     /* justify-self: center; */
     width: 80%;
     height: 100%;
@@ -110,7 +104,6 @@ fieldset {
     align-items: center;
     margin: 0 0 1rem 0;
     padding: 0;
-    /* box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.805); */
 }
 
 .input-block {
@@ -124,21 +117,25 @@ fieldset {
 
 input {
     width: 16rem;
-    height: 1.5rem;
+    height: 1.8rem;
     border-radius: 6px;
     border: 1px solid #E5E7EB;
     border-width: 0.1px;
-    /* border: 3px solid green; */
 }
 
-input:focus {
-    border: 2px solid #1c60e7;
-    box-shadow: 2px 4px 6px oklch(75% 1% 120 / 50%); 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+    border: 1px solid #1c60e7;
+    box-shadow: 2px 4px 6px oklch(75% 1% 120 / 50%);
+    outline: none; 
     
 }
 
 input:invalid {
-    border: 1px solid red;   
+    border: 1px solid red;
+    
 }
 
 input:valid {
@@ -146,17 +143,18 @@ input:valid {
 }
 
 .section-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     background-color: #ffffff;
-    /* border: 3px solid blue; */
     box-shadow: 0px 6px 9px oklch(69% 1% 120 / 50%);
    
 }
 
 
 button {
-    padding: 0.5rem 3rem;
+    padding: 0.75rem 3rem;
     font-size: 1.2rem;
-    border-radius: 6px;
+    border-radius: 9px;
     background-color: oklch(50% 39% 143); 
     margin: 2rem 0 2rem  0;
     font-family: inherit;
