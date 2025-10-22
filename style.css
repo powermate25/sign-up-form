@@ -61,7 +61,8 @@ div {
     width: 36%;
     height: 100%;
     background: url(./images/teemu-paananen-low.jpg);
-    background-size:cover ;
+    background-size: none;
+    background-position-y: bottom;
     background-repeat: no-repeat; 
 }
 
